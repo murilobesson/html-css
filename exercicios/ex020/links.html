@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+
+        body {
+            background-color: lightgoldenrodyellow;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(241, 129, 1);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: rgb(81, 43, 0);
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .especial {
+            background-color: rgb(236, 158, 69);
+        }
+
+        .especial::after {
+            content: '[☚]';
+        }
+
+        .especial::before {
+            content: '[☛]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" dofollow class="especial">Insta</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" dofollow>Youtube</a></li>
+        <li><a href="https://www.crunchyroll.com/pt-br" target="_blank" dofollow class="especial">Crunchyroll</a></li>
+    </ul>
+</body>
+</html>
